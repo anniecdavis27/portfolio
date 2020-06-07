@@ -1,0 +1,297 @@
+html{
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url("https://live.staticflickr.com/65535/49978271858_ea247e829a_k.jpg");
+    background-position-x: -1200px;
+    background-position-y: -300px;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: hue;
+    margin: 0px;
+}
+
+
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    background-color: #000000;
+}
+
+.name-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.initials {
+    color: #ffffff;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.full-name {
+    color: #ffffff;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    visibility: collapse;
+}
+
+.hamburger-btn {
+    width: 40px;
+    height: 40px;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5 ease-in-out;
+}
+
+/* The following code for the hamburger animation was inspired from https://www.youtube.com/watch?v=dIyVTjJAkLw */
+
+.hamburger-patty {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all .5 ease-in-out;
+}
+
+.hamburger-patty::before,
+.hamburger-patty::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px; 
+    background-color: #ffffff;
+}
+
+.hamburger-patty::before {
+    transform: translateY(10px);
+}
+
+.hamburger-patty::after {
+    transform: translateY(-10px);
+}
+
+.hamburger-btn.open .hamburger-patty {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.hamburger-btn.open .hamburger-patty::before {
+    transform: rotate(-45deg) translate(35px, 35px)
+}
+
+.hamburger-btn.open .hamburger-patty::after {
+    transform: rotate(45deg) translate(35px, -35px)
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
+    background-color: rgba(0,0,0,.65)
+}
+
+.nav-link {
+    color: #ffffff;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #c92800;
+}
+
+.main-body-grid {
+    grid-template-columns: 1;
+    grid-template-rows: 200px auto;
+    place-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.logo-box {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    padding: 85px 0px 30px 0px;
+}
+
+.main-page-content {
+    color: #ffffff;
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.foot {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poiret One', cursive;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    padding: 20px;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+   body {
+        background-size: 2200px;
+        background-position-x: -1150px;
+        background-position-y: -100px;
+        
+    } 
+
+    .initials {
+        color: #ffffff;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 65px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+
+    .hamburger-btn {
+        width: 60px;
+        height: 60px;
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .5 ease-in-out;
+    }
+
+    .hamburger-patty {
+        width: 45px;
+        height: 6px;
+        background-color: #ffffff;
+        transition: all .5 ease-in-out;
+    }
+    
+    .hamburger-patty::before,
+    .hamburger-patty::after {
+        content: '';
+        position: absolute;
+        width: 45px;
+        height: 6px; 
+        background-color: #ffffff;
+    }
+    
+    .hamburger-patty::before {
+        transform: translateY(15px);
+    }
+    
+    .hamburger-patty::after {
+        transform: translateY(-15px);
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 250px;
+        background-color: rgba(0,0,0,.65)
+    }
+
+    .nav-link {
+        color: #ffffff;
+        font-family: 'Poiret One', cursive;
+        font-size: 30px;
+    }
+    
+    .logo {
+        width: 350px;
+    }
+
+    .main-page-content {
+        color: #ffffff;
+        font-family: 'Poiret One', cursive;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .foot {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-size: 2200px;
+        background-position-x: -300px;
+        background-position-y: -400px;
+    } 
+
+    .initials {
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    .full-name {
+        visibility: visible;
+        font-size: 45px;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100px;
+        background-color: rgba(0,0,0,.65)
+    }
+
+    .main-page-content {
+        color: #ffffff;
+        font-family: 'Poiret One', cursive;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .foot {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1650px) {
+    body {
+        background-size: 3300px;
+        background-position-x: -700px;
+        background-position-y: -900px;
+    } 
+
+    .logo {
+        width: 500px;
+    }
+
+    
+
+}
+
+/* fonts:
+font-family: 'Amatic SC', cursive;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Poiret One', cursive; */
