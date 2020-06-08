@@ -7,7 +7,7 @@ body {
     background-image: url("https://live.staticflickr.com/65535/49978271858_ea247e829a_k.jpg");
     background-position-x: -1200px;
     background-position-y: -300px;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.7);
     background-blend-mode: hue;
     margin: 0px;
 }
@@ -104,7 +104,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     height: 150px;
-    background-color: rgba(0,0,0,.65)
+    background-color: rgba(0,0,0,.5)
 }
 
 .nav-link {
@@ -212,7 +212,7 @@ body {
         align-items: center;
         justify-content: space-evenly;
         height: 250px;
-        background-color: rgba(0,0,0,.65)
+        
     }
 
     .nav-link {
@@ -260,7 +260,6 @@ body {
         align-items: center;
         justify-content: space-evenly;
         height: 100px;
-        background-color: rgba(0,0,0,.65)
     }
 
     .main-page-content {
