@@ -45,6 +45,12 @@ body {
     visibility: collapse;
 }
 
+.main-link {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: crosshair;
+}
+
 .hamburger-btn {
     width: 40px;
     height: 40px;
@@ -53,6 +59,7 @@ body {
     align-items: center;
     justify-content: center;
     transition: all .5 ease-in-out;
+    cursor: crosshair;
 }
 
 /* The following code for the hamburger animation was inspired from https://www.youtube.com/watch?v=dIyVTjJAkLw */
