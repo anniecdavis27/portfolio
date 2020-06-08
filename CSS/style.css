@@ -9,12 +9,13 @@ body {
     background-color: rgba(0,0,0,.7);
     background-blend-mode: hue;
     margin: 0px;
+    margin-bottom: 60px;
+    font-family: 'Poiret One', cursive;
 }
 
 .pages-body {
     background-image: none;
     background-color: #ffffff;
-
 }
 
 .nav-flex {
@@ -115,7 +116,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     height: 150px;
-    background-color: rgba(0,0,0,.5)
+    background-color: rgba(0,0,0,.5);
 }
 
 .nav-link {
@@ -129,14 +130,13 @@ body {
 .nav-link:hover {
     color: #c92800;
 }
-
+/* Main page code */
 .main-body-grid {
     grid-template-columns: 1;
     grid-template-rows: 200px auto;
     place-items: center;
     width: 90%;
     margin: auto;
-    margin-bottom: 150px;
 }
 
 .logo-box {
@@ -145,7 +145,7 @@ body {
 
 .logo {
     width: 200px;
-    padding: 85px 0px 30px 0px;
+    padding: 40px 0px 30px 0px;
 }
 
 .main-page-content {
@@ -161,10 +161,11 @@ body {
     color: #ffffff;
     font-family: 'Poiret One', cursive;
     position: fixed;
+    height: 60px;
     left: 0px;
     bottom: 0px;
-    padding: 20px;
-    font-size: 10px;
+    padding: 10px;
+    font-size: 12px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -244,15 +245,15 @@ body {
     }
 
     .foot {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
     body {
         background-size: 2200px;
-        background-position-x: -300px;
-        background-position-y: -400px;
+        background-position-x: -500px;
+        background-position-y: -500px;
     } 
 
     .initials {
@@ -281,7 +282,7 @@ body {
     }
 
     .foot {
-        font-size: 20px;
+        font-size: 15px;
     }
 
 }
@@ -292,6 +293,10 @@ body {
         background-position-x: -700px;
         background-position-y: -900px;
     } 
+
+    .logo-box {
+        padding-top: 50px;
+    }
 
     .logo {
         width: 500px;

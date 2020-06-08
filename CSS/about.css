@@ -1,0 +1,162 @@
+* {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000000;
+}
+
+.pages-body {
+    width: 92%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.dropdown-menu.show {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.bio-box {
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1;
+}
+
+.bio-content {
+    padding: 10px;
+}
+
+.self-image {
+    width: 100%;
+}
+
+.annie-pic {
+    width: 100%;
+}
+
+.latest {
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+}
+
+.qualities {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 50%);
+    place-items: left;
+    padding-bottom: 1px;
+}
+
+.about-boxes {
+    padding: 1px;
+    border: 1px solid white;
+}
+
+#box-one {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#box-two {
+    background-color: rgb(78, 78, 78);
+    color: rgb(189, 189, 189);
+}
+
+#box-four {
+    background-color: rgb(189, 189, 189);
+    color:  rgb(78, 78, 78);
+}
+
+#box-three {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+ul {
+    list-style-type: square;
+}
+
+@media only screen and (min-width: 768px) {
+    .bio-box {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .bio-content {
+        font-size: 1.5rem;
+    }
+
+    .about-boxes {
+        padding: 10px;
+        border: 1px solid white;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .bio-box {
+        width: 90%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin: auto;
+        border-right: none;
+        border-left: none;
+        display: grid;
+        grid-template-columns: 35% auto;
+    }
+
+    .qualities {
+        padding-bottom: 15px;
+    }
+
+    .self-image {
+        grid-column: 1 / 2;
+        grid-row: 1/2;
+        border-right: 40px solid white;
+    }
+
+    .latest-box {
+        grid-column: 1/3;
+    }
+
+    .annie-pic {
+        padding-top: 5px;
+    }
+
+    .pages-body {
+        width: 96%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .qualities {
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    #box-three {
+        grid-column: 4/5;
+    }
+
+    #box-four {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .bio-box {
+        padding-top: 15px;
+    }
+
+    .latest-box {
+        margin-bottom: 100px;
+    }
+
+}
