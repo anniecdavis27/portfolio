@@ -33,6 +33,15 @@ html {
     border-bottom: 40px solid #000000;
 }
 
+.card-image {
+    width: 100%;
+}
+
+.port-flex {
+    display: flex;
+    flex-direction: column;
+}
+
 @media only screen and (min-width: 768px) {
     .contact-header {
         font-size: 8rem;

@@ -17,6 +17,7 @@ $.ajax({
               urllive: project.gsx$urllive.$t,
               urlgit: project.gsx$urlgit.$t,
               description: project.gsx$description.$t,
+              image: project.gsx$image.$t,
           }
       }) // map ends
       app(projects)
@@ -26,11 +27,30 @@ $.ajax({
 
 console.log('running after ajax')
 
+let $portfolio = $('<div>')
+
+$('body').append($portfolio)
+
+$portfolio.addClass('port-flex')
+
 function app(projectsArr) {
     console.log('inside app - projectsArr', projectsArr)
     projectsArr.forEach(project => {
-        let title = $('<h1>')
-        title.text(project.title)
-        $('body').append(title)
+        let $card = $('<div>')
+        
+        $($portfolio).append($card)
+
+        let $title = $('<h3>')
+        $title.text(project.title)
+        $($card).append($title)
+
+        let $img =$('<img>')
+        $img
+            .attr('src', `${project.image}`)
+
+        $($card).append($img)
+
+        $img.addClass('card-image')
+
     })
 }
