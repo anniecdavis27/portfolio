@@ -33,13 +33,48 @@ html {
     border-bottom: 40px solid #000000;
 }
 
-.card-image {
-    width: 100%;
+.port-flex {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.port-flex {
+.card-class {
+    padding: 10px;
+    max-width: 500px;
+    margin-top: 10px;
+    border-bottom: ridge #4d4d4d;
+}
+
+.project-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+}
+
+.card-image {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.link-flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.live-link {
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #c72e00;
+    background-color: #d1d1d1;
+    height: 40px;
+    width: 40%;
+}
+
+.project-description {
+    padding: 10px 0px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -49,6 +84,12 @@ html {
 
     .banner-img {
         height: 250px;
+    }
+}
+@media only screen and (min-width: 1085px) {
+    .card-class {
+        border-bottom: none;
+        padding: 20px;
     }
 }
 
