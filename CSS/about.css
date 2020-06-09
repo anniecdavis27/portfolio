@@ -29,7 +29,7 @@ html {
     height: 200px;
     background-image: url('https://live.staticflickr.com/65535/49986198431_d9aeebc675_k.jpg');
     background-size: cover;
-    background-position-y: -400px;
+    background-position-y: center;
     border-bottom: 40px solid #000000;
 }
 
