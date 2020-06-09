@@ -24,12 +24,20 @@ html {
     font-family: 'Amatic SC', cursive;
 }
 
+
 .banner-img {
     width: 100%;
     height: 200px;
     background-image: url('https://live.staticflickr.com/65535/49986165171_28a0a7ef6d_b.jpg');
     background-size: cover;
     background-position-y: center;
+}
+
+.contact-flex {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
 }
 
 .form {
@@ -44,8 +52,49 @@ html {
     margin: 5px 0px;
 }
 
-.info-container {
-    text-align: left;
+.contact-section-label {
+    font-family: 'Amatic SC', cursive;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    place-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact-btn {
+    width: 96%;
+    height: 150px;
+    border-radius: 0px;
+    background-color: #ffffff;
+    border: none;
+    margin: 10px;
+    cursor: crosshair;
+    font-family: 'Poiret One', cursive;
+}
+
+#li {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#ig {
+    background-color: rgb(78, 78, 78);
+    color: rgb(189, 189, 189);
+}
+
+#twitter {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: .5px solid #000000;
+}
+
+#email {
+    background-color: rgb(189, 189, 189);
+    color:  rgb(78, 78, 78);
 }
 
 @media only screen and (min-width: 768px) {
@@ -56,6 +105,7 @@ html {
     .banner-img {
         height: 250px;
     }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -69,6 +119,18 @@ html {
 
     .pages-body {
         width: 96%;
+    }
+
+    .contact-section-label {
+        font-size: 4rem;
+    }
+
+    .contact-btn {
+        font-size: 1.5rem;
+    }
+
+    .form {
+        font-size: 1.5rem;
     }
 }
 
