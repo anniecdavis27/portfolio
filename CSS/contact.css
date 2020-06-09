@@ -1,0 +1,19 @@
+* {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000000;
+}
+
+.pages-body {
+    width: 92%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.dropdown-menu.show {
+    background-color: rgba(0, 0, 0, .9);
+}
