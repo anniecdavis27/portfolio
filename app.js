@@ -1,4 +1,4 @@
-//console.log('connected')
+console.log('connected')
 
 const hamburgerBtn = document.querySelector('.hamburger-btn')
 const dropDownDisplay = document.querySelector('.dropdown-menu')
