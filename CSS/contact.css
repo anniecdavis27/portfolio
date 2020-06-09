@@ -30,6 +30,7 @@ html {
     background-image: url('https://live.staticflickr.com/65535/49986165171_28a0a7ef6d_b.jpg');
     background-size: cover;
     background-position-y: center;
+    border-bottom: 40px solid #000000;
 }
 
 .contact-flex {

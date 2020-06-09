@@ -1,0 +1,65 @@
+* {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000000;
+}
+
+.pages-body {
+    width: 92%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.dropdown-menu.show {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.contact-header {
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+.banner-img {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://live.staticflickr.com/65535/49988129252_a83303a0b9_k.jpg');
+    background-size: cover;
+    background-position-y: center;
+    border-bottom: 40px solid #000000;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-header {
+        font-size: 8rem;
+    }
+
+    .banner-img {
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact-header {
+        font-size: 12rem;
+    }
+
+    .banner-img {
+        height: 400px;
+    }
+
+    .pages-body {
+        width: 96%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .banner-img {
+        height: 500px;
+    }
+
+}

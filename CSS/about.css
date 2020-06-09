@@ -27,14 +27,14 @@ html {
 .banner-img {
     width: 100%;
     height: 200px;
-    background-image: url('https://live.staticflickr.com/65535/49988129252_a83303a0b9_k.jpg');
+    background-image: url('https://live.staticflickr.com/65535/49986198431_d9aeebc675_k.jpg');
     background-size: cover;
-    background-position-y: center;
+    background-position-y: -400px;
     border-bottom: 40px solid #000000;
 }
 
 .bio-box {
-    width: 98%;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 1;

@@ -15,7 +15,7 @@ About
     Create fact grid        H           30m             30  
     Styling                 H           45m             1.5hr
 Portfolio
-    Working with API	    H	        2hrs	        --hr
+    Working with API	    H	        3hrs	        --hr
     create grid             H           1.5             --
     Styling/Responsive      H           45m             --
 Contact    
