@@ -31,6 +31,7 @@ html {
     background-size: cover;
     background-position-y: center;
     border-bottom: 40px solid #000000;
+    border-top: 5px solid #c72e00;
 }
 
 .contact-flex {
@@ -50,6 +51,11 @@ html {
 
 .submit {
     margin: 5px 0px;
+    padding: 5px;
+    border-radius: 0px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    cursor: crosshair;
 }
 
 .contact-section-label {
@@ -84,9 +90,19 @@ html {
     color: #ffffff;
 }
 
+#li:hover {
+    background-color: #c72e00;
+    color: #ffffff;
+}
+
 #ig {
     background-color: rgb(78, 78, 78);
     color: rgb(189, 189, 189);
+}
+
+#ig:hover {
+    background-color: #d16442;
+    color: #fad4c8;
 }
 
 #twitter {
@@ -95,9 +111,20 @@ html {
     border: .5px solid #000000;
 }
 
+#email:hover {
+    background-color:#dd876d;
+    color:  #851f00;
+}
+
 #email {
     background-color: rgb(189, 189, 189);
     color:  rgb(78, 78, 78);
+}
+
+#twitter:hover {
+    background-color:#fad4c8;
+    color: #c72e00;  
+    border: .5px solid #c72e00;
 }
 
 @media only screen and (min-width: 768px) {

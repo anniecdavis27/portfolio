@@ -31,6 +31,7 @@ html {
     background-size: cover;
     background-position-y: center;
     border-bottom: 40px solid #000000;
+    border-top: 5px solid #c72e00;
 }
 
 .port-flex {
@@ -138,7 +139,7 @@ html {
 
     .caption-class:hover {
         opacity: 1;
-        transition: 1s ease;
+        transition: .5s ease;
         background-color: rgba(255, 255, 255, .7);
         border: 15px solid  #c72e00b7;
     }

@@ -13,6 +13,10 @@ body {
     font-family: 'Poiret One', cursive;
 }
 
+a {
+    cursor: crosshair;
+}
+
 .pages-body {
     background-image: none;
     background-color: #ffffff;
