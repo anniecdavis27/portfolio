@@ -133,12 +133,15 @@ html {
         position: relative;
         bottom: 201px;
         text-align: center;
-        opacity: 0
+        opacity: 0;
+        
     }
+
     .caption-class:hover {
         opacity: 1;
-        transition: .5s ease;
+        transition: 1s ease;
         background-color: rgba(255, 255, 255, .7);
+        border: 15px solid  #c72e00b7;
     }
 
     .card-class {
@@ -146,7 +149,8 @@ html {
     }
 
     .live-link {
-        margin-bottom: 0px;
+        margin-bottom: 0;
+        background-color: #c72e00b7;
     }
 }
 
