@@ -32,25 +32,35 @@ $portfolio.addClass('port-flex')
 function app(projectsArr) {
     projectsArr.forEach(project => {
         let $card = $('<div>')
-        $($portfolio).append($card)
-        $card.addClass('card-class')
-
-        let $title = $('<h3>')
-        $title.text(project.title)
-        $($card).append($title)
-        $title.addClass('project-title')
-
-        let $img =$('<img>')
+            $($portfolio).append($card)
+            $card.addClass('card-class')
+            // $card.css('background-image', `url(${project.image})`)
+            
+        let $img = $('<img>')
             $img
                 .attr('src', `${project.image}`)
             $($card).append($img)
             $img.addClass('card-image')
 
+        let $figcaption = $('<figcaption>')
+            $($card).append($figcaption)
+            $figcaption.addClass('caption-class')
+
+        let $title = $('<h3>')
+            $title.text(project.title)
+            $($figcaption).append($title)
+            $title.addClass('project-title')
+
+        let $description = $('<p>')
+            $description.text(project.description)
+            $($figcaption).append($description)
+            $description.addClass('project-description')
+
         let $linkflex = $('<div>')
-            $($card).append($linkflex)
+            $($figcaption).append($linkflex)
             $linkflex.addClass('link-flex')
 
-        let $livelink =$('<a>')
+        let $livelink = $('<a>')
             $livelink
                 .attr('href', `${project.urllive}`)
                 .attr('target', '_blank')
@@ -58,7 +68,7 @@ function app(projectsArr) {
             $($linkflex).append($livelink)
             $livelink.addClass('live-link')
 
-        let $gitlink =$('<a>')
+        let $gitlink = $('<a>')
             $gitlink
                 .attr('href', `${project.urlgit}`)
                 .attr('target', '_blank')
@@ -66,9 +76,5 @@ function app(projectsArr) {
             $($linkflex).append($gitlink)
             $gitlink.addClass('live-link')
         
-        let $description = $('<p>')
-            $description.text(project.description)
-            $($card).append($description)
-            $description.addClass('project-description')
     })
 }

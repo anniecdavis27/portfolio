@@ -41,20 +41,37 @@ html {
 }
 
 .card-class {
-    padding: 10px;
-    max-width: 500px;
-    margin-top: 10px;
+    width: 350px;
+    margin-top: 30px;
     border-bottom: ridge #4d4d4d;
+    background-size: cover;
 }
+/* 
+.card-class:hover {
+	
+} */
+
+.caption-class {
+    text-align: center;
+    padding-bottom: 30px;
+} 
+/* 
+.caption-class:hover {
+    visibility: visible;
+} */
 
 .project-title {
     font-family: 'Amatic SC', cursive;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    background-color: rgba(255, 255, 255, .7);
 }
 
 .card-image {
     width: 100%;
-    padding: 10px 0px;
+    max-width: 400px;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .link-flex {
@@ -67,10 +84,11 @@ html {
     text-align: center;
     padding-top: 10px;
     text-decoration: none;
-    color: #c72e00;
-    background-color: #d1d1d1;
+    color: #000000;
+    font-size: 20px;
     height: 40px;
     width: 40%;
+    border: 2px solid #000000; 
 }
 
 .project-description {
@@ -89,7 +107,6 @@ html {
 @media only screen and (min-width: 1085px) {
     .card-class {
         border-bottom: none;
-        padding: 20px;
     }
 }
 
@@ -113,3 +130,25 @@ html {
     }
 
 }
+
+@media(hover: hover) and (pointer: fine) {
+    .caption-class {
+        padding-top: 15px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        bottom: 201px;
+        text-align: center;
+        opacity: 0
+    }
+    .caption-class:hover {
+        opacity: 1;
+        transition: .5s ease;
+        background-color: rgba(255, 255, 255, .7);
+    }
+
+    .card-class {
+        height: 200px;
+    }
+}
+
