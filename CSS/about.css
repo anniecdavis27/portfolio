@@ -20,6 +20,7 @@ html {
     font-size: 60px;
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
+    padding: 15px;
 }
 
 .banner-img {
@@ -127,10 +128,6 @@ ul {
         font-size: 8rem;
     }
 
-    .banner-img {
-        height: 250px;
-    }
-
     h1 {
         font-size: 3rem;
     }
@@ -187,9 +184,6 @@ ul {
 }
 
 @media only screen and (min-width: 1440px) {
-    .banner-img {
-        height: 0px;
-    }
     
     .qualities {
         grid-template-columns: repeat(4, 25%);

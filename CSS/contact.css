@@ -20,6 +20,7 @@ html {
     font-size: 60px;
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
+    padding: 15px;
 }
 
 .banner-img {
@@ -31,6 +32,7 @@ html {
     background-position-y: center; */
     border-bottom: 40px solid #000000;
     border-top: 5px solid #c72e00;
+    margin-bottom: 30px;      
 }
 
 .contact-flex {
@@ -41,7 +43,9 @@ html {
 }
 
 .form {
-    padding: 30px 15px;
+    padding: 0px 15px 30px 15px;
+    margin-bottom: 30px;
+    border-bottom: 3px outset black;
 }
 
 .form-input {
@@ -59,6 +63,7 @@ html {
 
 .contact-section-label {
     font-family: 'Julius Sans One', sans-serif;
+    padding-bottom: 30px;
 }
 
 .btn-grid {
@@ -66,18 +71,16 @@ html {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);
     place-items: center;
-    margin-bottom: 20px;
-    width: 100%;
+    width: 300px;
 }
 
 .contact-btn {
-    width: 96%;
+    width: 100%;
     height: 150px;
     border-radius: 0px;
     background-color: #ffffff;
     text-align: center;
     border: none;
-    margin: 10px;
     cursor: crosshair;
     font-family: 'Open Sans Condensed', sans-serif;
     text-decoration: none;
@@ -107,7 +110,6 @@ html {
 #twitter {
     background-color: rgb(255, 255, 255);
     color: #000000;
-    border: .5px solid #000000;
 }
 
 #email:hover {
@@ -123,7 +125,6 @@ html {
 #twitter:hover {
     background-color:#fad4c8;
     color: #c72e00;  
-    border: .5px solid #c72e00;
 }
 
 @media only screen and (min-width: 768px) {
@@ -141,6 +142,10 @@ html {
     .contact-btn {
         width: 150px;
         height: 150px;
+    }
+    
+    .form {
+        border: none;
     }
 }
 
@@ -164,5 +169,13 @@ html {
 
     .form {
         font-size: 1.5rem;
+    }
+
+    #twitter {
+        border: .5px solid #000000;
+    }
+
+    #twitter:hover {
+        border: .5px solid #c72e00;
     }
 }
