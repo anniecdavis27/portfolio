@@ -60,7 +60,7 @@ div {
 .main-link {
     color: #ffffff;
     text-decoration: none;
-    cursor: crosshair;
+    cursor: pointer;
 }
 
 .hamburger-btn {
@@ -71,7 +71,7 @@ div {
     align-items: center;
     justify-content: center;
     transition: all .5 ease-in-out;
-    cursor: crosshair;
+    cursor: pointer;
 }
 
 /* The following code for the hamburger animation was inspired from https://www.youtube.com/watch?v=dIyVTjJAkLw */
@@ -81,6 +81,7 @@ div {
     height: 3px;
     background-color: #ffffff;
     transition: all .5 ease-in-out;
+    cursor: pointer;
 }
 
 .hamburger-patty::before,
@@ -162,13 +163,13 @@ div {
     text-shadow: 0 0 5px #c92800;
 }
 
-a {
+.span {
     transition: 1.5 ease-in-out;
     color: #ffffff;
     text-decoration: none;
 }
 
-a:hover {
+.span:hover {
     color: transparent;
     text-shadow: 0 0 10px #c92800;
     text-decoration: none;
