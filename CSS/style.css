@@ -118,9 +118,8 @@ div {
     flex-direction: column;
     align-items: center;
     visibility: hidden;
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
     height: 0px;
-
 }
 
 .dropdown-menu.show {
@@ -134,13 +133,12 @@ div {
 }
 
 .nav-link {
-    color: #ffffff;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
-    padding: 10px 0px 10px 0px;
     text-decoration: none;
+    color: #ffffff;
+    z-index: 0;
 }
-
 
 .nav-link:hover {
     color: #c92800;
@@ -156,10 +154,10 @@ div {
 }
 
 .main-page-content {
-    margin-top: 10rem;
+    margin-top: 7rem;
     color: #ffffff;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
 }
 
@@ -225,10 +223,6 @@ div {
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 30px;
     }
-    
-    .logo {
-        width: 350px;
-    }
 
     .main-page-content {
         font-size: 65px;
@@ -255,7 +249,6 @@ div {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-    
     }
 
     .dropdown-menu.show {
