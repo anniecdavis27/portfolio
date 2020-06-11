@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 .pages-body {
@@ -21,20 +21,22 @@ html {
 .contact-header {
     font-size: 60px;
     text-align: center;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .banner-img {
-    width: 100%;
-    height: 200px;
-    background-image: url('https://live.staticflickr.com/65535/49988129252_a83303a0b9_k.jpg');
+    width: 90%;
+    margin: auto;
+    height: 0px;
+    /* background-image: url('https://live.staticflickr.com/65535/49986198431_b39d41554f_k.jpg');
     background-size: cover;
-    background-position-y: center;
+    background-position-y: center; */
     border-bottom: 40px solid #000000;
     border-top: 5px solid #c72e00;
 }
 
 .port-flex {
+    padding-top: 30px;
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
@@ -44,7 +46,6 @@ html {
 
 .card-class {
     width: 350px;
-    margin-top: 30px;
     border-bottom: ridge #4d4d4d;
     background-size: cover;
 }
@@ -55,16 +56,13 @@ html {
 } 
 
 .project-title {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2.5rem;
 }
 
 .card-image {
     width: 100%;
     max-width: 400px;
-    opacity: 1;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
 }
 
 .link-flex {
@@ -83,6 +81,13 @@ html {
     height: 40px;
     width: 40%;
     margin-bottom: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    transition: .5s ease-in-out;
+}
+
+.live-link:hover {
+    width: 45%;
+    height: 45px;
 }
 
 .project-description {
@@ -94,35 +99,27 @@ html {
         font-size: 8rem;
     }
 
-    .banner-img {
-        height: 250px;
-    }
 }
 @media only screen and (min-width: 1085px) {
     .card-class {
-        border-bottom: none;
+        border: 1px solid gray;
+    }
+
+    .port-flex {
+        width: 50%;
+        margin: auto;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .contact-header {
-        font-size: 12rem;
-    }
-
-    .banner-img {
-        height: 400px;
+        padding: 20px;
+        font-size: 5rem;
     }
 
     .pages-body {
-        width: 96%;
+        width: 100%;
     }
-}
-
-@media only screen and (min-width: 1440px) {
-    .banner-img {
-        height: 500px;
-    }
-
 }
 
 @media(hover: hover) and (pointer: fine) {
@@ -134,14 +131,12 @@ html {
         bottom: 201px;
         text-align: center;
         opacity: 0;
-        
+        transition: .5s ease-in-out;
     }
 
     .caption-class:hover {
         opacity: 1;
-        transition: .5s ease;
         background-color: rgba(255, 255, 255, .7);
-        border: 15px solid  #c72e00b7;
     }
 
     .card-class {

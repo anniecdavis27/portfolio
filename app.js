@@ -2,6 +2,7 @@ console.log('connected')
 
 const hamburgerBtn = document.querySelector('.hamburger-btn')
 const dropDownDisplay = document.querySelector('.dropdown-menu')
+const dropDownLinks = document.querySelector('.nav-link')
 
 let isMenuOpen = false;
 
@@ -19,10 +20,12 @@ let isDropDown = false
 
 hamburgerBtn.addEventListener('click', () => {
     if (isDropDown == false) {
-        dropDownDisplay.classList.add('show')
+        dropDownDisplay.classList.toggle('show')
         isDropDown = true
-    } else {
-        dropDownDisplay.classList.remove('show')
+    } else if (isDropDown == true) {
+        dropDownDisplay.classList.toggle('show')
         isDropDown = false
     }
 })
+
+

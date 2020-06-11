@@ -10,11 +10,15 @@ body {
     background-blend-mode: hue;
     margin: 0px;
     margin-bottom: 60px;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Playfair Display', serif;
 }
 
 a {
-    cursor: crosshair;
+    cursor: pointer;
+}
+
+div {
+    cursor: default ;
 }
 
 .pages-body {
@@ -39,7 +43,7 @@ a {
 
 .initials {
     color: #ffffff;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 30px;
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -47,7 +51,7 @@ a {
 
 .full-name {
     color: #ffffff;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 0px;
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -112,23 +116,33 @@ a {
 
 .dropdown-menu {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    transition: .5s ease;
+    height: 0px;
+
 }
 
 .dropdown-menu.show {
     display: flex;
+    visibility: visible;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(0,0,0,.5);
+    height: 175px;
 }
 
 .nav-link {
+    display: hidden;
     color: #ffffff;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     padding: 10px 0px 10px 0px;
     text-decoration: none;
 }
+
 
 .nav-link:hover {
     color: #c92800;
@@ -153,7 +167,7 @@ a {
 
 .main-page-content {
     color: #ffffff;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 30px;
     text-align: center;
 }
@@ -162,7 +176,7 @@ a {
     width: 100%;
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     position: fixed;
     height: 60px;
     left: 0px;
@@ -182,7 +196,7 @@ a {
 
     .initials {
         color: #ffffff;
-        font-family: 'Architects Daughter', cursive;
+        font-family: 'Julius Sans One', sans-serif;
         font-size: 65px;
         margin-block-start: 0em;
         margin-block-end: 0em;
@@ -233,7 +247,7 @@ a {
 
     .nav-link {
         color: #ffffff;
-        font-family: 'Poiret One', cursive;
+        font-family: 'Open Sans Condensed', sans-serif;
         font-size: 30px;
     }
     
@@ -243,7 +257,7 @@ a {
 
     .main-page-content {
         color: #ffffff;
-        font-family: 'Poiret One', cursive;
+        font-family: 'Open Sans Condensed', sans-serif;
         font-size: 50px;
         text-align: center;
     }
@@ -270,6 +284,16 @@ a {
         font-size: 45px;
     }
 
+    .dropdown-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        visibility: hidden;
+        transition: .5s ease;
+        height: 0px;
+    
+    }
+
     .dropdown-menu.show {
         display: flex;
         flex-direction: row;
@@ -279,10 +303,7 @@ a {
     }
 
     .main-page-content {
-        color: #ffffff;
-        font-family: 'Poiret One', cursive;
         font-size: 45px;
-        text-align: center;
     }
 
     .foot {
@@ -310,6 +331,6 @@ a {
 
 
 /* fonts:
-font-family: 'Amatic SC', cursive;
-font-family: 'Architects Daughter', cursive;
-font-family: 'Poiret One', cursive; */
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Playfair Display', serif;*/
