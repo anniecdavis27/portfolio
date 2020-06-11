@@ -3,10 +3,9 @@ html{
 }
 
 body {
-    background-image: url("https://live.staticflickr.com/65535/49978271858_ea247e829a_k.jpg");
-    background-position-x: -1200px;
-    background-position-y: -300px;
-    background-color: rgba(0,0,0,.7);
+    background-image: url('https://live.staticflickr.com/65535/49995426902_240c44f901_k.jpg');
+    background-position-x: center;
+    background-color: rgba(0,0,0,.8);
     background-blend-mode: hue;
     margin: 0px;
     margin-bottom: 60px;
@@ -130,7 +129,7 @@ div {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.7);
     height: 175px;
 }
 
@@ -156,19 +155,11 @@ div {
     margin: auto;
 }
 
-.logo-box {
-    text-align: center;
-}
-
-.logo {
-    width: 200px;
-    padding: 40px 0px 30px 0px;
-}
-
 .main-page-content {
+    margin-top: 10rem;
     color: #ffffff;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -187,13 +178,6 @@ div {
 }
 
 @media only screen and (min-width: 768px) {
-   body {
-        background-size: 2200px;
-        background-position-x: -1150px;
-        background-position-y: -100px;
-        
-    } 
-
     .initials {
         color: #ffffff;
         font-family: 'Julius Sans One', sans-serif;
@@ -256,10 +240,7 @@ div {
     }
 
     .main-page-content {
-        color: #ffffff;
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-size: 50px;
-        text-align: center;
+        font-size: 65px;
     }
 
     .foot {
@@ -268,11 +249,6 @@ div {
 }
 
 @media only screen and (min-width: 1024px) {
-    body {
-        background-size: 2200px;
-        background-position-x: -500px;
-        background-position-y: -500px;
-    } 
 
     .initials {
         visibility: hidden;
@@ -303,7 +279,7 @@ div {
     }
 
     .main-page-content {
-        font-size: 45px;
+        font-size: 65px;
     }
 
     .foot {
@@ -313,11 +289,6 @@ div {
 }
 
 @media only screen and (min-width: 1650px) {
-    body {
-        background-size: 3300px;
-        background-position-x: -700px;
-        background-position-y: -900px;
-    } 
 
     .logo-box {
         padding-top: 50px;
