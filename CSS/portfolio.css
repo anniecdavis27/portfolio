@@ -9,8 +9,6 @@ html {
 }
 
 .pages-body {
-    width: 92%;
-    margin: auto;
     margin-bottom: 60px;
 }
 
@@ -25,7 +23,7 @@ html {
 }
 
 .banner-img {
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 0px;
     /* background-image: url('https://live.staticflickr.com/65535/49986198431_b39d41554f_k.jpg');
