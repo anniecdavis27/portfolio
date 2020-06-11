@@ -1,4 +1,3 @@
-//console.log('connected')
 
 // insert google sheet url here - anyone with access can view this literal sheet -- this should go into an invisible file
 const sheetUrl = 'https://docs.google.com/spreadsheets/d/1Z_QgMkSOtHpqjPDxQFwjQpcqUp1kHAqkXhnTaVi5PL4/edit?usp=sharing'
@@ -8,7 +7,6 @@ let sheetAsJSON = 'https://spreadsheets.google.com/feeds/list/1Z_QgMkSOtHpqjPDxQ
 $.ajax({
     url: sheetAsJSON,
   }).then((data) => {
-      console.log("data", data)
       const projects = data.feed.entry.map( project => {
           return {
               title: project.gsx$title.$t,
@@ -34,7 +32,6 @@ function app(projectsArr) {
         let $card = $('<div>')
             $($portfolio).append($card)
             $card.addClass('card-class')
-            // $card.css('background-image', `url(${project.image})`)
             
         let $img = $('<img>')
             $img

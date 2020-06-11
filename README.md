@@ -37,6 +37,9 @@ portfolio.html
 contact.html
 
 style.css
+about.css
+porfolio.css
+contact.css
 
 app.js
 
@@ -47,4 +50,9 @@ Color Scheme:
 - #4d4d4d
 - #ffffff
 - #000000
+
+fonts:
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Playfair Display', serif;
 
