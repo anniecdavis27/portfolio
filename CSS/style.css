@@ -159,6 +159,19 @@ div {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 45px;
     text-align: center;
+    text-shadow: 0 0 5px #c92800;
+}
+
+a {
+    transition: 1.5 ease-in-out;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: transparent;
+    text-shadow: 0 0 10px #c92800;
+    text-decoration: none;
 }
 
 /* Inspired by Animista*/
