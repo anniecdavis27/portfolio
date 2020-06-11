@@ -20,10 +20,10 @@ let isDropDown = false
 
 hamburgerBtn.addEventListener('click', () => {
     if (isDropDown == false) {
-        dropDownDisplay.classList.toggle('show')
+        dropDownDisplay.classList.add('show')
         isDropDown = true
     } else if (isDropDown == true) {
-        dropDownDisplay.classList.toggle('show')
+        dropDownDisplay.classList.remove('show')
         isDropDown = false
     }
 })
