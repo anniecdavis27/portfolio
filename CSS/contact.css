@@ -50,6 +50,7 @@ html {
 
 .form-input {
     padding: 5px 0px;
+    font-size: 15px;
 }
 
 .submit {
@@ -72,6 +73,7 @@ html {
     grid-template-rows: repeat(2, 50%);
     place-items: center;
     width: 300px;
+    margin: auto;
 }
 
 .contact-btn {
@@ -81,7 +83,7 @@ html {
     background-color: #ffffff;
     text-align: center;
     border: none;
-    cursor: crosshair;
+    cursor: pointer;
     font-family: 'Open Sans Condensed', sans-serif;
     text-decoration: none;
     padding-top: 75px;
@@ -90,6 +92,7 @@ html {
 #li {
     background-color: #000000;
     color: #ffffff;
+    transition: 1s ease-in-out;
 }
 
 #li:hover {
@@ -100,6 +103,7 @@ html {
 #ig {
     background-color: rgb(78, 78, 78);
     color: rgb(189, 189, 189);
+    transition: 1s ease-in-out;
 }
 
 #ig:hover {
@@ -110,6 +114,7 @@ html {
 #twitter {
     background-color: rgb(255, 255, 255);
     color: #000000;
+    transition: 1s ease-in-out;
 }
 
 #email:hover {
@@ -120,6 +125,7 @@ html {
 #email {
     background-color: rgb(189, 189, 189);
     color:  rgb(78, 78, 78);
+    transition: 1s ease-in-out;
 }
 
 #twitter:hover {
@@ -160,7 +166,7 @@ html {
     }
 
     .contact-section-label {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     .contact-btn {
