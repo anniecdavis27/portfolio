@@ -100,14 +100,9 @@ html {
     .card-class {
         border: 1px solid gray;
     }
-
-    .port-flex {
-        width: 50%;
-        margin: auto;
-    }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
     .contact-header {
         padding: 20px;
         font-size: 5rem;
@@ -115,6 +110,11 @@ html {
 
     .pages-body {
         width: 100%;
+    }
+
+    .port-flex {
+        width: 50%;
+        margin: auto;
     }
 }
 
