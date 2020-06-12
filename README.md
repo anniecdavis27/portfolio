@@ -34,7 +34,7 @@ Contact
     Styling/Responsive      H           45m             45m	 
 
 Tinkering/UI optimization   M           Many hours      Many hours           
-Total	                    H	        15hrs 15m	    7hrs 15m	        
+Total	                    H	        15hrs 15m	    ~15 hours	        
 
 Site Pages:
 - Homepage
