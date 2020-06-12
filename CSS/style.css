@@ -138,12 +138,36 @@ div {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     text-decoration: none;
+    opacity: 0;
     color: #ffffff;
-    z-index: 0;
+}
+
+#nav-one.visible {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 1.2s ease-in-out;
+    opacity: 1;
 }
 
 .nav-link:hover {
     color: #c92800;
+}
+
+#nav-two.visible-two {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 1.2s ease-in-out;
+    opacity: 1;
+}
+
+#nav-three.visible-three {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 1.2s ease-in-out;
+    opacity: 1;
 }
 
 /* Main page code */
